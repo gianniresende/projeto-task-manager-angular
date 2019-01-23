@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { TasksComponent } from "./tasks/tasks.component";
+import { LearningBindingsComponent } from './learning-bindings/learning-bindings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    TasksComponent
+    TasksComponent,
+    LearningBindingsComponent
   ],
   imports: [
     BrowserModule,
