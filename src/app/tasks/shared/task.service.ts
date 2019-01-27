@@ -21,8 +21,21 @@ export class TaskService{
   /**
    * getTasks
    */
-  public getTasks(): Array<Task> {
-    return TASKS;
+  public getTasks(): Promise<Task[]> {
+    let promise = new Promise(function(resolve, reject) {
+      if(TASKS.length > 0)
+      {
+        resolve(TASKS);
+      }
+      else
+      {
+        let error_msg = "NÃO HA TAREFAS";
+        reject(error_msg)
+      }      
+      
+    })
+
+    return promise;
   }
   
   
