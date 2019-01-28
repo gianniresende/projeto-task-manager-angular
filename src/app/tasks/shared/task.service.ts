@@ -22,6 +22,7 @@ export class TaskService{
   public constructor(private http: Http){}
   
   public getTasks(): Promise<Task[]> {
+
     let promise = new Promise(function(resolve, reject) {
       if(TASKS.length > 0)
       {
