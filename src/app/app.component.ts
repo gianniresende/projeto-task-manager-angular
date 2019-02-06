@@ -12,8 +12,7 @@ export class AppComponent {
   title = 'Gerenciador de Tarefas';
 
   public constructor(private tokenService: TokenService){
-    this.tokenService.init({
-      //apiBase: 'https://taskmanager-api-nonato.herokuapp.com',
+    this.tokenService.init({      
       apiBase: 'https://tasksmanager-api.herokuapp.com',
       globalOptions: {
         headers: {
